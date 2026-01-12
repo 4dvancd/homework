@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC</title>
+    <link rel="stylesheet" href="kfc-style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" aria-label="KFC Home">
+                    <img src="https://images.seeklogo.com/logo-png/17/1/kfc-logo-png_seeklogo-176326.png" alt="KFC Logo" loading="lazy" onerror="this.onerror=null;this.src='../assets/kfc.svg'">
+                </a>
+            </div>
+            <nav class="header-nav">
+                <button class="nav-link" data-section="menu">Menu</button>
+                <button class="nav-link" data-section="reviews">Đánh giá</button>
+            </nav>
+        </div>
+    </header>
+    <section class="restaurant-hero">
+        <div class="hero-content">
+            <div class="restaurant-image">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.iShVJhhBavwnQXzW8GoD6wHaE8?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="KFC Restaurant" loading="lazy">
+            </div>
+            <div class="restaurant-info">
+                <h1>KFC</h1>
+                <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="review-count">360 đánh giá </span>
+                </div>
+                <div class="delivery-info">
+                    <span class="fee">Phí ship: <strong>$1000</strong></span>
+                    <span class="time">Thời gian: <strong>8-10 tieng</strong></span>
+                </div>
+                <p class="description">Thuc ann nhanh</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="menu-section">
+        <div class="section-header">
+            <h2>Menu</h2>
+            <div class="search-menu">
+                <input type="text" id="menuSearch" placeholder="Tìm kiếm..." aria-label="Search menu items">
+            </div>
+        </div>
+
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">Tất cả</button>
+            <button class="category-btn" data-category="combo">Combo</button>
+            <button class="category-btn" data-category="chicken">Gà rán</button>
+            <button class="category-btn" data-category="sides">Paracetamol</button>
+            <button class="category-btn" data-category="drinks">Đồ uống</button>
+            <button class="category-btn" data-category="dessert">Tráng miệng</button>
+        </div>
+
+        <div id="menuGrid" class="menu-grid">
+            <div class="menu-item" data-category="combo">
+                <div class="item-image">
+                    <img src="https://img.giftpop.vn/brand/KFC/MP2202150004_BASIC_origin.jpg" alt="Combo 1" loading="lazy">
+                    <span class="badge">Phổ biến</span>
+                </div>
+                <div class="item-info">
+                    <h3>Combo 2 Miếng Gà + Cơm/Khoai</h3>
+                    <p class="description">2 miếng gà rán giòn + cơm trắng hoặc khoai</p>
+                    <div class="item-footer">
+                        <span class="price">$1200</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="combo">
+                <div class="item-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqbxs_lxWbDlDH1gT8bo3-UZ_HlNwRLGTIFg&s" alt="Combo 3" loading="lazy">
+                    <span class="badge">Khuyến mãi</span>
+                </div>
+                <div class="item-info">
+                    <h3>Combo 3 Miếng Gà + Kèm</h3>
+                    <p class="description">3 miếng gà rán + khoai tây chiên + nước</p>
+                    <div class="item-footer">
+                        <span class="price">₫129,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="combo">
+                <div class="item-image">
+                    <img src="https://p16-oec-sg.ibyteimg.com/tos-alisg-i-aphluv4xwc-sg/4a10fa1382ba457f8bf7227c73bcdc19~tplv-aphluv4xwc-resize-webp:800:800.webp?dr=15584&t=555f072d&ps=933b5bde&shp=6ce186a1&shcp=e1be8f53&idc=maliva&from=1826719393" alt="Family Combo" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Combo Gia Đình (5 Người)</h3>
+                    <p class="description">5 miếng gà rán + 2 khoai + 2 nước + salad</p>
+                    <div class="item-footer">
+                        <span class="price">₫249,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chicken section -->
+            <div class="menu-item" data-category="chicken">
+                <div class="item-image">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=300" alt="Chicken Piece" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Gà Rán (1 Miếng)</h3>
+                    <p class="description">Miếng gà rán giòn ngoài, mềm trong</p>
+                    <div class="item-footer">
+                        <span class="price">₫35,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="chicken">
+                <div class="item-image">
+                    <img src="https://cdn.eva.vn/upload/3-2023/images/2023-07-17/3-cong-thuc-lam-ga-ran-kfc-vang-uom-gion-rum-ai-an-cung-tam-tac-dinh-cua-chop-6-1689575536-452-width680height478.jpg" alt="Wings" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Cánh Gà Rán</h3>
+                    <p class="description">Cánh gà nướng giòn, vị cay vừa phải</p>
+                    <div class="item-footer">
+                        <span class="price">₫45,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="chicken">
+                <div class="item-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKt9dbtkLkr9akdyvFvsYp-2pXgeHfnjGS6A&s" alt="Whole Chicken" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Gà Nguyên Chỉnh (Gia Đình)</h3>
+                    <p class="description">Gà rán nguyên chỉnh, phục vụ 3-4 người</p>
+                    <div class="item-footer">
+                        <span class="price">₫199,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides section -->
+            <div class="menu-item" data-category="sides">
+                <div class="item-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ3MA4bFcGsVWJTX-IgQplXMxZSGeB_-_EGw&s" alt="Fries" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Khoai Tây Chiên</h3>
+                    <p class="description">Khoai tây chiên giòn vàng</p>
+                    <div class="item-footer">
+                        <span class="price">₫25,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="sides">
+                <div class="item-image">
+                    <img src="https://cdn.tgdd.vn/Files/2022/11/12/1486370/cach-lam-bap-cai-tron-kieu-kfc-don-gian-chuan-vi-nha-hang-202211121556062160.jpg" alt="Coleslaw" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Salad Bắp Cải</h3>
+                    <p class="description">Salad bắp cải tươi mát với sốt đặc biệt</p>
+                    <div class="item-footer">
+                        <span class="price">₫35,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="sides">
+                <div class="item-image">
+                    <img src="https://cdn.tgdd.vn/2020/07/CookProduct/Untitled-4-1200x676-1.jpg" alt="Rice" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Cơm Trắng / Cơm Chiên</h3>
+                    <p class="description">Cơm trắng hoặc cơm chiên tôm</p>
+                    <div class="item-footer">
+                        <span class="price">₫20,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drinks section -->
+            <div class="menu-item" data-category="drinks">
+                <div class="item-image">
+                    <img src="https://cdn.tgdd.vn/Products/Images/2443/76451/bhx/nuoc-ngot-coca-cola-lon-320ml-202304131107534011.jpg" alt="Cola" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Coca Cola (Lạnh)</h3>
+                    <p class="description">Nước ngọt Coca Cola lạnh</p>
+                    <div class="item-footer">
+                        <span class="price">₫15,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drinks">
+                <div class="item-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStMiGNUZiyrIdkVRdKZy-NZiHnghuXMSUtEw&s" alt="Lemonade" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Nước Chanh Tươi</h3>
+                    <p class="description">Nước chanh tươi mát, vị chuẩn</p>
+                    <div class="item-footer">
+                        <span class="price">₫25,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="drinks">
+                <div class="item-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnCRjGucoEKBhGpah0yJM3hjnTETCxUG0IQw&s" alt="Ice Tea" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Trà Đá Lạnh</h3>
+                    <p class="description">Trà đá tươi mát thơm ngon</p>
+                    <div class="item-footer">
+                        <span class="price">₫20,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dessert section -->
+            <div class="menu-item" data-category="dessert">
+                <div class="item-image">
+                    <img src="https://img.giftpop.vn/brand/KFC/MP2203300002_BASIC_origin.jpg" alt="Ice Cream" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Kem Vani</h3>
+                    <p class="description">Kem vani mịn mịn, mát lạnh</p>
+                    <div class="item-footer">
+                        <span class="price">₫30,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="dessert">
+                <div class="item-image">
+                    <img src="https://external-preview.redd.it/kfc-introduces-new-apple-pie-poppers-v0-GXIHrWQl4BFr7X1fulI7xoAFzuND3xBpGL7VHQfjN-g.jpg?auto=webp&s=410813ddc90ce77388152bb3c57137099b3cd741" alt="Pie" loading="lazy">
+                </div>
+                <div class="item-info">
+                    <h3>Bánh Apple Pie</h3>
+                    <p class="description">Bánh táo giòn ngoài, nóng trong</p>
+                    <div class="item-footer">
+                        <span class="price">₫25,000</span>
+                        <div class="quantity-control">
+                            <button class="qty-decrease" aria-label="Giảm số lượng">−</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-increase" aria-label="Tăng số lượng">+</button>
+                        </div>
+                        <button class="add-btn" aria-label="Thêm vào giỏ">🛒</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-container">
+            <div class="section-header">
+                <h2>Đánh Giá từ Khách Hàng</h2>
+            </div>
+
+            <!-- Add Review Form -->
+            <div class="add-review-form">
+                <h3>Chia Sẻ Đánh Giá của Bạn</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label for="reviewName">Tên của bạn</label>
+                        <input type="text" id="reviewName" placeholder="Nhập tên" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewRating">Đánh giá (sao)</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" class="star">★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" class="star">★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" class="star">★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" class="star">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" class="star">★</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewText">Nội dung đánh giá</label>
+                        <textarea id="reviewText" placeholder="Chia sẻ trải nghiệm của bạn..." rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-review-btn">Gửi Đánh Giá</button>
+                </form>
+            </div>
+
+            <!-- Reviews List -->
+            <div class="reviews-list" id="reviewsList">
+                <!-- Reviews will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <h2>Giỏ Hàng</h2>
+        <div id="cartContainer" class="cart-container">
+            <p class="empty-cart">Chưa có món ăn nào trong giỏ</p>
+        </div>
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Tổng tiền:</span>
+                <span id="totalPrice">₫0</span>
+            </div>
+            <div class="summary-row">
+                <span>Phí ship:</span>
+                <span>$1000</span>
+            </div>
+            <div class="summary-row total">
+                <span>Thành tiền:</span>
+                <span id="finalPrice"></span>
+            </div>
+            <button class="checkout-btn">Đặt Hàng Ngay</button>
+        </div>
+    </section>
+    <script src="kfc-script.js"></script>
+</body>
+</html>
